@@ -9,7 +9,7 @@ export default function devprocess() {
                             <p className="text-uppercase text-white">Evolution of Projects</p>
                             <hr className="border-white mt-1 mx-auto hr-x-small" />
                             <h4 className="text-warning text-uppercase">Project Development Process</h4>
-                            <img src={Dev} alt="development process" className="w-75 mt-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true" />
+                            <img src={Dev} alt="development process" className="w-75 mt-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600" data-aos-delay="700" data-aos-once="true" />
                         </div>
                     </div>
                 </div>

@@ -13,8 +13,8 @@ export default function solutionsWhyUs(){
                     <h4 className="text-warning text-uppercase">Why Choose a Dedicated NFT Development Company?</h4>
                     <p className="text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <div className="d-flex align-items-center gap-4">
-                        <button className="btn btn-warning px-4 py-2 fw-bold my-3">Connect On Whatsapp</button>
-                        <button className="btn btn-outline-light px-4 py-2 fw-bold my-3">Connect On Telegram</button>
+                        <a target="_blank" href="https://wa.me/7420969224" className="btn btn-warning px-4 py-2 fw-bold my-3">Connect On Whatsapp</a>
+                        <a target="_blank" href="https://t.me/Tantrija" className="btn btn-outline-light px-4 py-2 fw-bold my-3">Connect On Telegram</a>
                     </div>
                 </div>
             </div>

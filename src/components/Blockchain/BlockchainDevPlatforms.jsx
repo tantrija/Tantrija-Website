@@ -42,7 +42,7 @@ export default function aboutConnect(){
         <div className="bg-dark-grey p-5 text-center mt-5 pt-4">
             <div className="container pt-5">
                 <h6 className="fw-bold text-uppercase text-warning mt-3">Blockchain Development Platforms we Support</h6>
-                <p className="text-white text-center">As a leading blockchain software development company, we leverage different blockchain networks to provide<br/> you with the best solutions aligned with your needs.</p>
+                <p className="text-white text-center">At Tantrija, we excel in developing blockchain solutions on a variety of platforms,<br></br> leveraging their unique features to create innovative and secure applications.</p>
                 <div className="d-flex justify-content-center flex-wrap gap-4 mt-4 ">
                     {connectData.map((card, index) => (
                         <div className="bg-dark tech-card position-relative d-flex align-items-center justify-content-center flex-wrap mb-4" key={index} data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">

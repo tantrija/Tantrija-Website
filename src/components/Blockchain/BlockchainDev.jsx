@@ -9,38 +9,38 @@ import ArrowRight from "../../assets/arrow-right.svg";
 const aboutBlockchainDevData = [
         {
           img: blockArch,
-          title: "Blockchain Architecture Design",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Requirement Analysis",
+          desc: "We start by understanding your business requirements and objectives to define the scope of the project accurately.",
           arrowImg: ArrowRight,
         },
         {
           img: businessLogic,
-          title: "Business Logic Customization",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Planning and Design",
+          desc: "Our team of experts collaborates with you to create a detailed project plan and design the architecture of your blockchain solution.",
           arrowImg: ArrowRight,
         },
         {
           img: privateDev,
-          title: "Private & Permissioned Development",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Development",
+          desc: "Using the latest technologies and best practices, we develop your blockchain solution, including smart contracts, APIs, and front-end interfaces.",
           arrowImg: ArrowRight,
         },
         {
           img: chaincodeDev,
-          title: "Chaincode Development",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Testing",
+          desc: "We conduct rigorous testing to ensure that your blockchain solution is secure, reliable, and free from any bugs or vulnerabilities.",
           arrowImg: ArrowRight,
         },
         {
           img: dApp,
-          title: "dApp Development and Migration",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Deployment",
+          desc: "Once testing is complete, we deploy your blockchain solution to the desired platform, ensuring a seamless transition to live operations.",
           arrowImg: ArrowRight,
         },
         {
           img: blockchainIntegration,
-          title: "Blockchain Solution Integration",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          title: "Maintenance and Support",
+          desc: "We provide ongoing maintenance and support to keep your blockchain solution up-to-date and running smoothly.",
           arrowImg: ArrowRight,
         },
 ]
@@ -53,7 +53,7 @@ export default function aboutServices() {
                         <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
                             <p className="text-uppercase text-white">Blockchain Development</p>
                             <hr className="border-white mt-1 mx-auto hr-x-small" />
-                            <h4 className="text-warning text-uppercase">Our Blockchain Development Services</h4>
+                            <h4 className="text-warning text-uppercase">Our Blockchain Development Process</h4>
                             </div>
                              <div className="col-lg-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                                 <div className="row mt-3">
@@ -72,13 +72,13 @@ export default function aboutServices() {
                                     {card.title}
                                   </h6>
                                   <p className="text-dark text-three-lines">{card.desc}</p>
-                                  <a
+                                  {/* <a
                                     href="#"
                                     className="d-flex justify-content-end mt-3"
                                   >
                                     <img src={card.arrowImg} alt="link" />
                                   </a>
-                                  <a href="#" className="card-link"></a>
+                                  <a href="#" className="card-link"></a> */}
                                 </div>
                               </div>
                                 ))}

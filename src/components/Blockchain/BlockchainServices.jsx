@@ -10,43 +10,43 @@ import metaverse from "../../assets/metaverse.svg"
 const BlockchainServiceData = [
     {
         img: cryptoDev,
-        title: 'Cryptocurrency Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Smart Contract Development',
+        desc: 'We specialize in creating smart contracts that automate processes and ensure transparent transactions on platforms like Ethereum etc.',
     },
     {
         img: exchange,
-        title: 'Centralized Exchange Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'DApp Development',
+        desc: 'Our team develops Decentralized Applications (DApps) that leverage blockchain technology, offering secure and reliable solutions for various industries.',
     },
     {
         img: wallet,
-        title: 'Crypto Wallet Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Blockchain Consulting',
+        desc: 'We provide expert guidance on blockchain technology, helping businesses understand its potential and how it can be integrated into their existing systems.',
     },
     {
         img: shop,
-        title: 'NFT Marketplace Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Private Blockchain Development',
+        desc: 'We design and develop private blockchains for organizations looking to enhance security, transparency, and efficiency in their operations.',
     },
     {
         img: Contract,
-        title: 'Smart Contract Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Blockchain Integration',
+        desc: 'Our team integrates blockchain technology with existing systems, ensuring seamless compatibility and efficient functionality.',
     },
     {
         img: ico,
-        title: 'ICO and IEO Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Token Development',
+        desc: 'We assist in the creation of custom tokens for various purposes, including ICOs, STOs, and utility tokens, providing end-to-end token development services..',
     },
     {
         img: AppDevelopment,
-        title: 'Decentralized App (dApp) Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Blockchain Audits',
+        desc: 'We conduct extensive audits of blockchain systems (Audits) to identify and resolve any vulnerabilities, ensuring the security and integrity of the network.',
     },
     {
         img: metaverse,
-        title: 'Metaverse Development',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        title: 'Cryptocurrency Exchange Development',
+        desc: 'Transform your idea into a fully functional exchange platform with our expertise in blockchain technology and secure trading mechanisms.',
     },
 ]
 

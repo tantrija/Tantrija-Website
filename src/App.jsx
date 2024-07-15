@@ -1,9 +1,12 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import React from "react";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Blockchain from "./Pages/Blockchain";
+import GameDevelopment from "./Pages/GameDevelopment";
+import WebDevelopment from "./Pages/WebDevelopment";
+import MobileDevelopment from "./Pages/MobileDevelopment";
 import Solutions from "./Pages/Solutions";
 import Portfolio from "./Pages/Portfolio";
 import PortfolioInner from "./Pages/PortfolioInner";
@@ -14,25 +17,34 @@ import "./App.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useFavicon from "./useFavicon";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+
 AOS.init({
   offset: 0,
 });
 
-
-
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  { path: "/About", element: <About /> },
-  { path: "/Blockchain", element: <Blockchain /> },
-  { path: "/Solutions", element: <Solutions /> },
-  { path: "/Portfolio", element: <Portfolio /> },
-  { path: "/PortfolioInner", element: <PortfolioInner /> },
-  { path: "/CaseStudies", element: <CaseStudies /> },
-  { path: "/CaseStudiesInner", element: <CaseStudiesInner /> },
-  { path: "/Contact", element: <Contact /> },
+  { path: "/about", element: <About /> },
+  { path: "/blockchain", element: <Blockchain /> },
+  { path: "/game-development", element: <GameDevelopment /> },
+  { path: "/web-development", element: <WebDevelopment /> },
+  { path: "/mobile-development", element: <MobileDevelopment /> },
+  // { path: "/Solutions", element: <Solutions /> },
+  // { path: "/Portfolio", element: <Portfolio /> },
+  // { path: "/PortfolioInner", element: <PortfolioInner /> },
+  // { path: "/CaseStudies", element: <CaseStudies /> },
+  // { path: "/CaseStudiesInner", element: <CaseStudiesInner /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/privacy-policy", element: <PrivacyPolicy /> },
+  { path: "/terms-and-conditions", element: <TermsAndConditions /> },
 ]);
 
 export default function App() {
+  useFavicon()
+
   return (
     <>
       <div className="App">
@@ -70,7 +82,7 @@ export default function App() {
         ]}
       />
       </div>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </>
   );
 }

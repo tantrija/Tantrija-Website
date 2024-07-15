@@ -9,25 +9,25 @@ import ArrowRight from "../../assets/arrow-right.svg";
 const innovateData = [
         {
           img: research,
-          title: "Research",
+          title: "Innovation",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           arrowImg: ArrowRight,
         },
         {
           img: strategy,
-          title: "Strategy",
+          title: "Integrity",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           arrowImg: ArrowRight,
         },
         {
           img: consulting,
-          title: "Consulting",
+          title: "Customer Focus",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           arrowImg: ArrowRight,
         },
         {
           img: digital,
-          title: "Digital",
+          title: "Empowerment",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           arrowImg: ArrowRight,
         },
@@ -51,7 +51,7 @@ export default function aboutServices() {
                 <div className="container">
                     <div className="row pt-4">
                         <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
-                            <h4 className="text-warning text-uppercase">How We Innovate</h4>
+                            <h4 className="text-warning text-uppercase">Our Core Values</h4>
                             </div>
                              <div className="col-lg-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                                 <div className="row mt-3">

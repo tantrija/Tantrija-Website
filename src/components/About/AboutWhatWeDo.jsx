@@ -6,13 +6,17 @@ export default function whatWeDo () {
                     <p className="text-uppercase text-white">What We Do</p>
                     <hr className="border-white mt-1 hr-x-small" />
                     <h4 className="text-warning text-uppercase">Helping Businesses to Stay Ahead of Change</h4>
-                    <p className="text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p className="text-white mt-3">At Tantrija, we believe in a client-centric approach. We work closely with our
+clients to understand their needs and deliver solutions that exceed expectations.
+Our process is transparent, collaborative, and focused on achieving great results.</p>
                 </div>
                 <div className="col-lg-6 mt-4">
                     <div className="card bg-dark-grey p-5">
                         <div className="py-4">
-                            <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                            <p className="fw-bold text-warning ps-4 text-uppercase position-relative arrow-before">For Clients</p>
+                            <p className="text-white">Our goal is to help businesses succeed by offering advanced software solutions that
+improve efficiency and growth. We strive to be the catalyst for digital
+transformation, helping our clients achieve their highest potential.</p>
+                            <p className="fw-bold text-warning ps-4 text-uppercase position-relative arrow-before">Our Mission</p>
                         </div>
                     </div>
                 </div>

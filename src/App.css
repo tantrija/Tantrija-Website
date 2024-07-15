@@ -141,9 +141,10 @@ body {
   text-align: var(--vt-body-text-align);
   background: url("./assets/body-bg.png") #091020;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   transition: unset!important;
+  scroll-behavior: smooth;
 }
 
 hr {
@@ -1159,7 +1160,7 @@ iframe {
   appearance: none;
   background-color: var(--vt-body-bg);
   background-clip: padding-box;
-  border: var(--vt-border-width) solid #2A3756;
+  border: var(--vt-border-width) solid #a9acb3;
   border-radius: var(--vt-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1172,12 +1173,12 @@ iframe {
 }
 
 .form-control::-moz-placeholder {
-  color: #353F57;
+  color: #a9acb3;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #353F57;
+  color: #a9acb3;
   opacity: 1;
 }
 
@@ -1225,7 +1226,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: var(--vt-border-width) solid #2A3756;
+  border: var(--vt-border-width) solid #a9acb3;
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
   print-color-adjust: exact;
@@ -1565,6 +1566,28 @@ textarea.form-control {
 }
 .vh-100 {
   height: 100vh !important;
+}
+.linkIcon-15 {
+  height: 15px;
+  margin-left: 10px;
+}
+.vh-70{
+  min-height: 70vh !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.vh-80{
+  min-height: 90vh !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.vh-50{
+  min-height: 50vh !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .min-vh-100 {
   min-height: 100vh !important;
@@ -2171,6 +2194,12 @@ textarea.form-control {
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
+.text-five-lines{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
 .text-three-lines{
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -2180,9 +2209,16 @@ textarea.form-control {
 
 .text-four-lines{
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+}
+
+.industries-title {
+  min-height: 142px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .face-light{
@@ -2538,3 +2574,10 @@ body[data-aos-delay='5000'] [data-aos].aos-animate {
   }
 }
 
+.opacity-6 {
+  color: #ffffff80 !important;
+}
+
+.opacity-4 {
+  color: #ffffff40 !important;
+}
