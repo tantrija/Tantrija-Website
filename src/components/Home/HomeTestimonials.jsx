@@ -7,44 +7,36 @@ import QuoteImg from "../../assets/quote.png"
 
 const testimonialsData = [
     {
-        "userImg": "EmilySmithImg",
+        "userImg": "AliImg",
         "quoteImg": QuoteImg,
-        "userName": "Emily Smith",
-        "company": "ABC Solutions",
-        "title": "Website Development",
-        "desc": "Tantrija exceeded my expectations! They crafted a stunning website tailored to my business needs, providing exceptional support throughout the process."
+        "userName": "Ali",
+        "company": "CACTUS",
+        "title": "Logo Designing",
+        "desc": "Exceptional logo design service. Perfectly captured our brand essence. Delivered a sleek, memorable logo that truly stands out. Highly recommended!"
     },
     {
-        "userImg": "JohnDoeImg",
+        "userImg": "SamuelMillerImg",
         "quoteImg": QuoteImg,
-        "userName": "John Doe",
-        "company": "ABC Solutions",
+        "userName": "Sam Miller",
+        "company": "The Fineart Ledger",
         "title": "Blockchain Integration",
-        "desc": "Impressed with Tantrija's expertise in blockchain! Their team seamlessly integrated blockchain technology into our system, enhancing security and efficiency."
+        "desc": "Outstanding NFT marketplace development. Deep blockchain expertise evident. User-friendly platform with innovative features. Boosted our trading immensely."
     },
     {
-        "userImg": "SarahJohnsonImg",
+        "userImg": "DanielZanggerImg",
         "quoteImg": QuoteImg,
-        "userName": "Sarah Johnson",
-        "company": "ABC Solutions",
-        "title": "Mobile App Development",
-        "desc": "Tantrija delivered an outstanding mobile app! Attention to detail and quality commitment led to a user-friendly application, surpassing expectations."
+        "userName": "Daniel Zangger",
+        "company": "Vocal Workout of The Day",
+        "title": "Mobile Application",
+        "desc": "Impressive mobile app creation. Intuitive design meets flawless functionality. Significantly increased user engagement and retention. A game-changer!"
     },
     {
-        "userImg": "DavidLeeImg",
+        "userImg": "EdwinHoImg",
         "quoteImg": QuoteImg,
-        "userName": "David Lee",
-        "company": "ABC Solutions",
-        "title": "Game Development",
-        "desc": "Exceptional work by Tantrija in game development! They brought our vision to life with creativity and precision, delivering a top-notch gaming experience."
-    },
-    {
-        "userImg": "RachelWongImg",
-        "quoteImg": QuoteImg,
-        "userName": "Rachel Wong",
-        "company": "ABC Solutions",
-        "title": "IT Consulting",
-        "desc": "Highly recommend Tantrija for IT consulting! Their team provided invaluable insights and solutions, helping us streamline our operations and achieve our business goals."
+        "userName": "Edwin Ho",
+        "company": "Hedger Pay",
+        "title": "Backend Deveopment",
+        "desc": "Excellent backend development and support. Robust, scalable solutions. Quick response to issues. Significantly improved our system's performance and reliability."
     }
 ]
 

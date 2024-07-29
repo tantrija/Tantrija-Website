@@ -1,89 +1,69 @@
-import research from "../../assets/research-icon.svg"
-import strategy from "../../assets/strategy-icon.svg"
-import consulting from "../../assets/consulting-icon.svg"
-import digital from "../../assets/digital-icon.svg"
-import technology from "../../assets/technology-icon.svg"
-import operations from "../../assets/operations-icon.svg"
-import ArrowRight from "../../assets/arrow-right.svg";
+import React from 'react';
+import researchIcon from "../../assets/research-icon.svg"
+import strategyIcon from "../../assets/strategy-icon.svg"
+import consultingIcon from "../../assets/consulting-icon.svg"
+import digitalIcon from "../../assets/digital-icon.svg"
+import technologyIcon from "../../assets/technology-icon.svg"
+import operationsIcon from "../../assets/operations-icon.svg"
 
-const innovateData = [
-        {
-          img: research,
-          title: "Innovation",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
-        {
-          img: strategy,
-          title: "Integrity",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
-        {
-          img: consulting,
-          title: "Customer Focus",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
-        {
-          img: digital,
-          title: "Empowerment",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
-        {
-          img: technology,
-          title: "Technology",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
-        {
-          img: operations,
-          title: "Operations",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          arrowImg: ArrowRight,
-        },
+const itServices = [
+    {
+        img: researchIcon,
+        title: "Software Development",
+        desc: "Custom software solutions tailored to your business needs, leveraging cutting-edge technologies and best practices in development.",
+    },
+    {
+        img: strategyIcon,
+        title: "Blockchain Solutions",
+        desc: "Innovative blockchain technologies to enhance security, transparency, and efficiency in your business processes and transactions.",
+    },
+    {
+        img: consultingIcon,
+        title: "IT Consulting",
+        desc: "Expert guidance on IT strategy, infrastructure planning, and technology adoption to align your tech investments with business goals.",
+    },
+    {
+        img: digitalIcon,
+        title: "Digital Transformation",
+        desc: "End-to-end digital transformation services to modernize your business processes and enhance customer experiences.",
+    },
+    {
+        img: technologyIcon,
+        title: "Cybersecurity",
+        desc: "Robust security solutions to protect your digital assets, ensure data privacy, and maintain compliance with industry standards.",
+    },
+    {
+        img: operationsIcon,
+        title: "IT Support & Maintenance",
+        desc: "Reliable IT support and maintenance services to ensure smooth operations and minimize downtime for your business.",
+    },
 ]
 
-export default function aboutServices() {
+export default function ITServicesOfferings() {
     return (
-            <div className="bg-circle-left collab mt-5 pb-4">
-                <div className="container">
-                    <div className="row pt-4">
-                        <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
-                            <h4 className="text-warning text-uppercase">Our Core Values</h4>
-                            </div>
-                             <div className="col-lg-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-                                <div className="row mt-3">
-                                {innovateData.map((card, index) => (
+        <section className="it-services-offerings bg-circle-left collab mt-5 pb-4" aria-labelledby="it-services-heading">
+            <div className="container">
+                <div className="row pt-4">
+                    <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                      <h2 id="it-services-heading" className="text-warning text-uppercase">Our Comprehensive IT Services</h2>
+                    </div>
+                    <div className="col-lg-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+                        <div className="row mt-3">
+                            {itServices.map((service, index) => (
                                 <div className="col-lg-4 mb-4" key={index}>
-                                <div
-                                  className="card bg-warning p-4"
-                                  data-aos="fade-in"
-                                  data-aos-easing="linear"
-                                  data-aos-duration="1000"
-                                  data-aos-delay="50"
-                                  data-aos-once="true"
-                                >
-                                  <img src={card.img} width={30} height={30} alt="hire icon" />
-                                  <h6 className="fw-medium text-uppercase text-dark mt-3 title-short">
-                                    {card.title}
-                                  </h6>
-                                  <p className="text-dark text-three-lines">{card.desc}</p>
-                                  <a
-                                    href="#"
-                                    className="d-flex justify-content-end mt-3"
-                                  >
-                                    <img src={card.arrowImg} alt="link" />
-                                  </a>
-                                  <a href="#" className="card-link"></a>
+                                    <article className="card bg-warning p-4" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                                        <img src={service.img} width={30} height={30} alt={`${service.title} icon`} />
+                                        <h2 className="fw-medium text-uppercase text-dark mt-3 title-short" style={{ fontSize: '1rem' }}>
+                                            {service.title}
+                                        </h2>
+                                        <p className="text-dark text-five-lines">{service.desc}</p>
+                                    </article>
                                 </div>
-                              </div>
-                                ))}
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
     )
 }

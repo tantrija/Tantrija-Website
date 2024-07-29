@@ -14,7 +14,7 @@ export default function about() {
           <Header />
           <AboutBanner />
           <AboutWhatWeDo />
-          {/* <AboutInnovate /> */}
+          <AboutInnovate />
           <AboutBelieve />
           <AboutLead />
           <ProjectForm />
