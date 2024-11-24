@@ -10,8 +10,14 @@ import Testimonials from "../components/Home/HomeTestimonials";
 import ProjectForm from "../components/Home/HomeProjectForm";
 import Footer from "../components/Global/Footer";
 import HomeIndustries from "../components/Home/HomeIndustries";
+import * as ReactGA from "react-ga";
+import { useEffect } from "react";
 
 export default function home() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
 
   return (
     <>

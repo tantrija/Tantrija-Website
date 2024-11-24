@@ -10,21 +10,28 @@ import Industries from "../components/Development/Industries";
 import Demo from "../components/Development/Demo";
 import WhyChooseUs from "../components/Development/WhyChooseUs";
 import Footer from "../components/Global/Footer";
+import * as ReactGA from "react-ga";
+import { useEffect } from "react";
 
 export default function WebDevelopment() {
-    return (
-        <>
-          <Header />
-          <Banner />
-          <Services />
-          <Connect />
-          <Dev />
-          <DevPlatforms />
-          <Industries />
-          <Demo />
-          <WhyChooseUs />
-          <ProjectForm />
-          <Footer />
-        </>
-    )
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
+  return (
+    <>
+      <Header />
+      <Banner />
+      <Services />
+      <Connect />
+      <Dev />
+      <DevPlatforms />
+      <Industries />
+      <Demo />
+      <WhyChooseUs />
+      <ProjectForm />
+      <Footer />
+    </>
+  )
 }

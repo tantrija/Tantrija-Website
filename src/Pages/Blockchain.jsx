@@ -10,21 +10,28 @@ import BlockchainIndustries from "../components/Blockchain/BlockchainIndustries"
 import BlockchainDemo from "../components/Blockchain/BlockchainDemo";
 import BlockchainWhyChooseUs from "../components/Blockchain/BlockchainWhyChooseUs";
 import Footer from "../components/Global/Footer";
+import * as ReactGA from "react-ga";
+import { useEffect } from "react";
 
 export default function blockchain() {
-    return (
-        <>
-          <Header />
-          <BlockchainBanner />
-          <BlockchainServices />
-          <BlockchainConnect />
-          <BlockchainDev />
-          <BlockchainDevPlatforms />
-          <BlockchainIndustries />
-          <BlockchainDemo />
-          <BlockchainWhyChooseUs />
-          <ProjectForm />
-          <Footer />
-        </>
-    )
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
+  return (
+    <>
+      <Header />
+      <BlockchainBanner />
+      <BlockchainServices />
+      <BlockchainConnect />
+      <BlockchainDev />
+      <BlockchainDevPlatforms />
+      <BlockchainIndustries />
+      <BlockchainDemo />
+      <BlockchainWhyChooseUs />
+      <ProjectForm />
+      <Footer />
+    </>
+  )
 }

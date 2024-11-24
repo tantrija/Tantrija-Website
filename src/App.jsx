@@ -20,6 +20,10 @@ import "aos/dist/aos.css";
 import useFavicon from "./useFavicon";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsAndConditions from "./Pages/TermsAndConditions";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-1PQGPQJ23N";
+ReactGA.initialize(TRACKING_ID);
 
 AOS.init({
   offset: 0,
@@ -49,38 +53,38 @@ export default function App() {
     <>
       <div className="App">
         <AnimatedCursor
-        innerSize={0}
-        outerSize={15}
-        color='255, 255, 255'
-        outerAlpha={0.5}
-        innerScale={0.7}
-        outerScale={2}
-        showSystemCursor={true}
-        clickables={[
-          'a',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link',
-          {
-            target: '.custom',
-            options: {
-              innerSize: 12,
-              outerSize: 12,
-              color: '255, 255, 255',
-              outerAlpha: 0.3,
-              innerScale: 0.7,
-              outerScale: 5
+          innerSize={0}
+          outerSize={15}
+          color='255, 255, 255'
+          outerAlpha={0.5}
+          innerScale={0.7}
+          outerScale={2}
+          showSystemCursor={true}
+          clickables={[
+            'a',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link',
+            {
+              target: '.custom',
+              options: {
+                innerSize: 12,
+                outerSize: 12,
+                color: '255, 255, 255',
+                outerAlpha: 0.3,
+                innerScale: 0.7,
+                outerScale: 5
+              }
             }
-          }
-        ]}
-      />
+          ]}
+        />
       </div>
       <RouterProvider router={router} />
     </>

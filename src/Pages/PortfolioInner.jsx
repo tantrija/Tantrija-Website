@@ -8,22 +8,26 @@ import CaseStudiesInnerClients from "../components/CaseStudies/CaseStudiesInnerC
 import ProjectForm from "../components/Home/HomeProjectForm";
 import Footer from "../components/Global/Footer";
 import { useEffect } from "react";
+import * as ReactGA from "react-ga";
 
 export default function PortfolioInner() {
-  useEffect(()=>{
+
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
-    return (
-        <>
-          <Header />
-          <PortfolioInnerBanner />
-          <ProfileCombination />
-          <PortfolioChallanges />
-          <PortfolioFeatures />
-          <PortfolioInnerRequest />
-          <CaseStudiesInnerClients />
-          <ProjectForm />
-          <Footer />
-        </>
-    )
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
+  return (
+    <>
+      <Header />
+      <PortfolioInnerBanner />
+      <ProfileCombination />
+      <PortfolioChallanges />
+      <PortfolioFeatures />
+      <PortfolioInnerRequest />
+      <CaseStudiesInnerClients />
+      <ProjectForm />
+      <Footer />
+    </>
+  )
 }
