@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
                                 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
                             </p>
                             <p class="text-white">
-                                If you have any questions or concerns about our Privacy Policy, please contact us at <b><a href="tel:+91 9717439147">+91-9717439147</a></b>.
+                                If you have any questions or concerns about our Privacy Policy, please contact us at <b><a href="tel:+91 9784527279">+91-9784527279</a></b>.
                             </p>
                             <p class="text-white">
                                 This policy is effective as of 20th JUNE, 2024.

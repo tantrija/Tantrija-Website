@@ -140,7 +140,7 @@ export default function CaseStudiesBanner() {
                   <br /> Pune, Maharastra, India
                 </p>
                 <span>
-                  Call: <a href="tel:+919717439147" className="text-warning fw-bold">+91 9717439147</a>
+                  Call: <a href="tel:+919784527279" className="text-warning fw-bold">+91 9784527279</a>
                 </span>
                 <br />
                 <br />

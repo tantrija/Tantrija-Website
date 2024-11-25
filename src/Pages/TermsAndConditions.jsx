@@ -57,7 +57,7 @@ export default function TermsAndConditions() {
                                 These Terms, including any legal notices and disclaimers contained on this Website, constitute the entire agreement between Tantrija and you in relation to your use of this Website, and supersede all prior agreements and understandings with respect to the same.
                             </p>
                             <p class="text-white">
-                                If you have any questions or concerns about our Terms and Conditions, please contact us at <b><a href="tel:+91 9717439147">+91-9717439147</a></b>.
+                                If you have any questions or concerns about our Terms and Conditions, please contact us at <b><a href="tel:+91 9784527279">+91-9784527279</a></b>.
                             </p>
                             <p class="text-white">
                                 This terms and conditions are effective as of 20th JUNE, 2024.

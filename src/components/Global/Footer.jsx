@@ -50,7 +50,7 @@ export default function Footer() {
                     <div className="col-lg-3 mb-3">
                         <h6 className="text-warning text-uppercase mb-3">Contact Info</h6>
                         <p className="text-muted mb-2 mt-0">Email: <a href="mailto:admin@tantrija.com">admin@tantrija.com</a></p>
-                        <p className="text-muted mb-2 mt-0">Contact Number: <a href="tel:+919717439147">+91 9717439147</a></p>
+                        <p className="text-muted mb-2 mt-0">Contact Number: <a href="tel:+919784527279">+91 9784527279</a></p>
                         <p className="text-muted mb-2 mt-0">Whatsapp Number: <a target="_blank" rel="noopener noreferrer" href="https://wa.me/7420969224">+91 7420969224</a></p>
                         <p className="text-muted">E-1804, R9 - Life Republic, Pune,<br />Maharastra, India</p>
                     </div>
