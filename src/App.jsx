@@ -70,7 +70,7 @@ const config = {
   botAvatar: logoIcon,
   floatingIcon: <img src={logoIcon} style={{ width: 50, height: 50, borderRadius: 50 }} />,
   // headerComponent: <div style={{paddingInline: 20, paddingBlock: 10, backgroundColor: "#ffc200", justifyContent:"space-between", alignItems:"center", display: "flex"}}><span style={{fontSize: 20, color:"black"}}><img src={logoIcon} style={{width: 35, height: 35, marginRight: 10, borderRadius: 35 }}/>Tantrija Enterprises</span><RiCloseLine color="black" size={20} onClick/></div>,
-  opened: true,
+  opened: window.innerWidth > 768 ? true : false,
   handleEnd: async(e) => {
     console.log("e ---- ", e)
     const {values} = e;
