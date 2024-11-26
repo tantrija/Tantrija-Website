@@ -62,15 +62,39 @@ const theme = {
   botFontColor: 'white',
   userBubbleColor: '#aaa', // Blue, inspired by tech/blockchain aesthetic
   userFontColor: 'white'
- };
+};
 
 // Set some properties of the bot
 const config = {
   floating: true,
   botAvatar: logoIcon,
-  floatingIcon: <img src={logoIcon} style={{width: 50, height: 50, borderRadius: 50 }}/>,
+  floatingIcon: <img src={logoIcon} style={{ width: 50, height: 50, borderRadius: 50 }} />,
   // headerComponent: <div style={{paddingInline: 20, paddingBlock: 10, backgroundColor: "#ffc200", justifyContent:"space-between", alignItems:"center", display: "flex"}}><span style={{fontSize: 20, color:"black"}}><img src={logoIcon} style={{width: 35, height: 35, marginRight: 10, borderRadius: 35 }}/>Tantrija Enterprises</span><RiCloseLine color="black" size={20} onClick/></div>,
   opened: true,
+  handleEnd: async(e) => {
+    console.log("e ---- ", e)
+    const {values} = e;
+
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeXqZpfKyVZH2w5qchGRDMs8BFnLXin15lvxI-KLDxXLgE-IQ"; // Replace with your Google Form URL
+    const formEntries = {
+      "entry.2005620554": values[values.length - 3],        // Replace with actual entry ID for the name field
+      "entry.1045781291": values[values.length - 2],       // Replace with actual entry ID for the email field
+      "entry.1166974658": values[values.length - 1],       // Replace with actual entry ID for the phone field
+      "entry.839337160": JSON.stringify(values)  // Replace with actual entry ID for the description field
+    };
+
+    const queryString = new URLSearchParams(formEntries).toString();
+    const submitUrl = `${formUrl}/formResponse?${queryString}`;
+
+    try {
+      await fetch(submitUrl, {
+        method: "POST",
+        mode: "no-cors" // Important to avoid CORS issues
+      });
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 };
 
 export default function App() {
