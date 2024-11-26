@@ -14,6 +14,7 @@ import CaseStudies from "./Pages/CaseStudies";
 import CaseStudiesInner from "./Pages/CaseStudiesInner";
 import Contact from "./Pages/Contact";
 import "./App.css";
+import logoIcon from "./assets/Tantrija-black.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +22,11 @@ import useFavicon from "./useFavicon";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsAndConditions from "./Pages/TermsAndConditions";
 import ReactGA from "react-ga";
+
+import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
+import { steps } from "./chatbot/chatbot-steps";
+import { RiCloseLine } from "react-icons/ri";
 
 const TRACKING_ID = "G-1PQGPQJ23N";
 ReactGA.initialize(TRACKING_ID);
@@ -45,6 +51,27 @@ const router = createBrowserRouter([
   { path: "/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/terms-and-conditions", element: <TermsAndConditions /> },
 ]);
+
+// Creating our own theme
+const theme = {
+  background: '#F4F4F4', // Light gray background, matching clean web design
+  headerBgColor: '#ffc200', // Retained original green from blockchain/tech theme
+  headerFontSize: '20px',
+  botBubbleColor: '#091020', // Darker green, complementing the header
+  headerFontColor: 'white',
+  botFontColor: 'white',
+  userBubbleColor: '#aaa', // Blue, inspired by tech/blockchain aesthetic
+  userFontColor: 'white'
+ };
+
+// Set some properties of the bot
+const config = {
+  floating: true,
+  botAvatar: logoIcon,
+  floatingIcon: <img src={logoIcon} style={{width: 50, height: 50, borderRadius: 50 }}/>,
+  // headerComponent: <div style={{paddingInline: 20, paddingBlock: 10, backgroundColor: "#ffc200", justifyContent:"space-between", alignItems:"center", display: "flex"}}><span style={{fontSize: 20, color:"black"}}><img src={logoIcon} style={{width: 35, height: 35, marginRight: 10, borderRadius: 35 }}/>Tantrija Enterprises</span><RiCloseLine color="black" size={20} onClick/></div>,
+  opened: true,
+};
 
 export default function App() {
   useFavicon()
@@ -87,6 +114,16 @@ export default function App() {
         />
       </div>
       <RouterProvider router={router} />
+      <ThemeProvider theme={theme}>
+        <ChatBot
+          // This appears as the header
+          // text for the chat bot
+          headerTitle="Tantrija"
+          recognitionEnable={true}
+          steps={steps}
+          {...config}
+        />
+      </ThemeProvider>
     </>
   );
 }
