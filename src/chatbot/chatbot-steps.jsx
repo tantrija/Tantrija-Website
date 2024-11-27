@@ -39,6 +39,7 @@ export const steps = [
       { value: "naming", label: "Brand Naming", trigger: "contact_form" },
       { value: "positioning", label: "Brand Positioning", trigger: "contact_form" },
       { value: "strategy", label: "Brand Strategy", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -52,6 +53,7 @@ export const steps = [
       { value: "custom", label: "Custom Logo Design", trigger: "contact_form" },
       { value: "iconography", label: "Iconography", trigger: "contact_form" },
       { value: "rebranding", label: "Rebranding", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -70,6 +72,7 @@ export const steps = [
       { value: "responsive", label: "Responsive Design", trigger: "contact_form" },
       { value: "landing_pages", label: "Landing Pages", trigger: "contact_form" },
       { value: "performance", label: "Performance Optimization", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -86,6 +89,7 @@ export const steps = [
       { value: "pwa", label: "Progressive Web Apps", trigger: "contact_form" },
       { value: "game_dev", label: "Mobile Game Development", trigger: "contact_form" },
       { value: "iot", label: "IoT Apps", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -101,6 +105,7 @@ export const steps = [
       { value: "smart_contracts", label: "Smart Contracts", trigger: "contact_form" },
       { value: "nft", label: "NFT Platforms", trigger: "contact_form" },
       { value: "dex", label: "Decentralized Exchanges", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -113,6 +118,7 @@ export const steps = [
     options: [
       { value: "custom_extensions", label: "Custom Extensions", trigger: "contact_form" },
       { value: "tools", label: "Productivity Tools", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -125,6 +131,7 @@ export const steps = [
     options: [
       { value: "custom_sdk", label: "Custom SDK Development", trigger: "contact_form" },
       { value: "api_integration", label: "API Integration", trigger: "contact_form" },
+      { value: "back", label: "Go Back", trigger: "select_service" },
     ],
   },
   {
@@ -214,26 +221,31 @@ export const steps = [
         <p style={{ fontSize: "18px", marginBottom: "20px" }}>Here are our contact details:</p>
         <div style={{ marginBottom: "15px" }}>
           <p style={{ fontSize: "16px", marginBottom: "8px" }}>
-            📧 <strong>Email:</strong> 
+            📧 <strong>Email:</strong>
             <a href="mailto:admin@tantrija.com" style={{ color: "#007bff", textDecoration: "none" }}> admin@tantrija.com</a>
           </p>
           <p style={{ fontSize: "16px", marginBottom: "8px" }}>
-            📞 <strong>Phone:</strong> 
+            📞 <strong>Phone:</strong>
             <a href="tel:+917420969224" style={{ color: "#007bff", textDecoration: "none" }}> +91-7420969224</a>
           </p>
           <p style={{ fontSize: "16px", marginBottom: "8px" }}>
-            💬 <strong>WhatsApp:</strong> 
+            💬 <strong>WhatsApp:</strong>
             <a href="https://wa.me/917420969224" target="_blank" rel="noopener noreferrer" style={{ color: "#25d366", textDecoration: "none", fontWeight: "bold" }}> Chat with Us</a>
           </p>
         </div>
         <div>
           <p style={{ fontSize: "14px", color: "#888", marginTop: "20px" }}>
-            🌐 <strong>LinkedIn:</strong> 
+            🌐 <strong>LinkedIn:</strong>
             <a href="https://www.linkedin.com/company/tantrija" target="_blank" rel="noopener noreferrer" style={{ color: "#007bff", textDecoration: "none" }}> Visit Our Page</a>
           </p>
         </div>
+        <button
+          style={{ marginTop: "20px", padding: "10px 20px", backgroundColor: "#007bff", color: "#fff", border: "none", borderRadius: "5px", cursor: "pointer" }}
+          onClick={() => window.location.reload()}>
+          Restart
+        </button>
       </div>
     ),
     end: true,
-  }  
+  }
 ];
