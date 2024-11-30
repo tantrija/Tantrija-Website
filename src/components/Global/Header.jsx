@@ -62,6 +62,11 @@ const MobileNav = ({ toggleNavbar }) => {
                 </g>
               </svg>
             </a>
+            <a href="https://tantrija.medium.com" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Tantrija Medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.694" height="18.706" viewBox="0 0 20.694 18.706">
+                <path d="m24 24h-24v-24h24zm-8.986-15.006v7.326c0 .198 0 .234-.127.362l-1.302 1.264v.27h6.32v-.27l-1.257-1.234c-.091-.07-.148-.178-.148-.3 0-.022.002-.043.005-.064v.002-9.07c-.003-.019-.005-.04-.005-.062 0-.121.058-.229.148-.298l.001-.001 1.286-1.234v-.27h-4.456l-3.176 7.924-3.609-7.924h-4.675v.271l1.502 1.813c.127.115.207.281.207.466 0 .022-.001.043-.003.064v-.003 7.126c.007.041.011.088.011.136 0 .222-.088.423-.231.571l-1.69 2.054v.27h4.8v-.27l-1.691-2.054c-.149-.154-.241-.363-.241-.595 0-.04.003-.079.008-.117v.004-6.16l4.215 9.195h.49z" fill="#ffc200" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -106,7 +111,7 @@ export default function header() {
         <div className="d-flex align-items-center justify-content-between" key={pathname?.toLowerCase()}>
           <Link to={"/"}>
             <div className="d-flex align-items-center gap-2 site-identity">
-              <img src={(isMobile ? logoIcon : logoText)} alt="Tantrija IT Services Logo" style={{maxWidth: (isMobile ? 45 : '100%')}}/>
+              <img src={(isMobile ? logoIcon : logoText)} alt="Tantrija IT Services Logo" style={{ maxWidth: (isMobile ? 45 : '100%') }} />
             </div>
           </Link>
           {isMobile ? (
@@ -123,10 +128,16 @@ export default function header() {
                   <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/about" && " active border-bottom border-warning")}>
                     <Link to={"/about"}>About Us</Link>
                   </li>
+                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/portfolio" && " active border-bottom border-warning")}>
+                    <Link to={"/portfolio"}>Portfolio</Link>
+                  </li>
+                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
+                    <Link to={"/casestudies"}>Case Studies</Link>
+                  </li>
                   <li onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                     className={active ? 'nav-link py-4 active' : 'nav-link py-4'}>
-                    <Link to="/services">IT Services <FaAngleDown /></Link>
+                    <Link to="#">IT Services <FaAngleDown /></Link>
                     <MegaMenuBlockchain />
                   </li>
                 </ul>
@@ -142,6 +153,11 @@ export default function header() {
                     <g id="Group_49" data-name="Group 49" transform="translate(-84.064 -100)">
                       <path id="Path_33" data-name="Path 33" d="M100.362,100h3.173L96.6,107.924l8.156,10.782H98.373l-5-6.539-5.723,6.539H84.473l7.415-8.475L84.064,100h6.548l4.521,5.977Zm-1.114,16.806h1.758L89.657,101.8H87.77Z" fill="#f1f1f1" />
                     </g>
+                  </svg>
+                </a>
+                <a href="https://tantrija.medium.com" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Tantrija Medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.694" height="18.706" viewBox="0 0 20.694 18.706">
+                    <path d="M2.426 4.973c0-.384-.125-.768-.375-1.058L0 2.093V1.66h5.774l4.46 9.796 3.926-9.796H19.59v.433l-1.703 1.635c-.147.112-.221.294-.191.476v11.96c-.03.182.044.364.191.476l1.66 1.635v.433h-8.352v-.433l1.722-1.673c.169-.169.169-.218.169-.476V6.047l-4.785 12.16h-.645L3.234 6.047v8.125c-.047.34.067.682.298.927l2.24 2.72v.433H0v-.433l2.24-2.72c.23-.245.334-.587.186-.927V4.973z" fill="#f1f1f1" />
                   </svg>
                 </a>
               </div>

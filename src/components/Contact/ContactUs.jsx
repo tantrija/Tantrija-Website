@@ -122,7 +122,7 @@ export default function CaseStudiesBanner() {
       </form>
       <div className="row justify-content-center">
         <div
-          className="col-lg-6 mb-4"
+          className="col-lg-12 mb-4"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1000"
@@ -135,9 +135,7 @@ export default function CaseStudiesBanner() {
                 <h4 className="text-warning fw-bold text-uppercase">Tantrija</h4>
                 <h6 className="text-white fw-bold text-uppercase">India</h6>
                 <p className="text-white my-4">
-                  E1804, R9 - Life Republic, <br />
-                  Marunji Road
-                  <br /> Pune, Maharastra, India
+                  Pune, Maharastra, India
                 </p>
                 <span>
                   Call: <a href="tel:+919784527279" className="text-warning fw-bold">+91 9784527279</a>
@@ -155,22 +153,87 @@ export default function CaseStudiesBanner() {
           </div>
         </div>
         {/* Uncomment and update as needed */}
-        {/* <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
-            <div className="card p-5 bg-dark-grey">
-                <div className="row align-items-end">
-                    <div className="col-lg-7 pe-0">
-                        <h4 className="text-warning fw-bold text-uppercase">UK</h4>
-                        <h6 className="text-white fw-bold text-uppercase">Blockchain Solutions</h6>
-                        <p className="text-white">F-264, PHASE - 8A, <br/>Industrial Area, SAS Nagar,
-                        <br/>Punjab, 160062</p>
-                        <a href="#" className="text-warning fw-bold">+1-844-899-0003</a>
-                    </div>
-                    <div className="col-lg-5 p-0">
-                        <img src={taj} className="img-fluid" alt="uk" />
-                    </div>
-                </div>
+        <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+          <div className="card p-5 bg-dark-grey">
+            <div className="row align-items-end">
+              <div className="col-lg-10 pe-0">
+                <h4 className="text-warning fw-bold text-uppercase">General Inquiries</h4>
+                <h6 className="text-white fw-bold text-uppercase"><a href="mailto:info@tantrija.com">📩 &nbsp; info@tantrija.com</a></h6>
+              </div>
+              <div className="col-lg-4 p-0">
+                {/* <img src={uk} className="img-fluid" alt="General Inquiries" /> */}
+              </div>
             </div>
-        </div> */}
+          </div>
+        </div>
+
+        <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+          <div className="card p-5 bg-dark-grey">
+            <div className="row align-items-end">
+              <div className="col-lg-10 pe-0">
+                <h4 className="text-warning fw-bold text-uppercase">Support</h4>
+                <h6 className="text-white fw-bold text-uppercase">
+                  <a href="mailto:support@tantrija.com">🛠️ &nbsp; support@tantrija.com</a>
+                  <br />
+                  <a href="mailto:techsupport@tantrija.com">💻 &nbsp; techsupport@tantrija.com</a> 
+                </h6>
+              </div>
+              <div className="col-lg-4 p-0">
+                {/* <img src={uk} className="img-fluid" alt="Support" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+          <div className="card p-5 bg-dark-grey">
+            <div className="row align-items-end">
+              <div className="col-lg-10 pe-0">
+                <h4 className="text-warning fw-bold text-uppercase">Sales & Outreach</h4>
+                <h6 className="text-white fw-bold text-uppercase">
+                  <a href="mailto:sales@tantrija.com">💼 &nbsp; sales@tantrija.com</a> 
+                  <br />
+                  <a href="mailto:contact@tantrija.com">📞 &nbsp; contact@tantrija.com</a> 
+                </h6>
+              </div>
+              <div className="col-lg-4 p-0">
+                {/* <img src={salesImage} className="img-fluid" alt="Sales" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+          <div className="card p-5 bg-dark-grey">
+            <div className="row align-items-end">
+              <div className="col-lg-10 pe-0">
+                <h4 className="text-warning fw-bold text-uppercase">HR & Feedback</h4>
+                <h6 className="text-white fw-bold text-uppercase">
+                  <a href="mailto:hr@tantrija.com">👥 &nbsp; hr@tantrija.com</a>
+                  <br />
+                  <a href="mailto:feedback@tantrija.com">📝 &nbsp; feedback@tantrija.com</a>
+                </h6>
+              </div>
+              <div className="col-lg-4 p-0">
+                {/* <img src={hrImage} className="img-fluid" alt="HR & Feedback" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+          <div className="card p-5 bg-dark-grey">
+            <div className="row align-items-end">
+              <div className="col-lg-10 pe-0">
+                <h4 className="text-warning fw-bold text-uppercase">Research & Development</h4>
+                <h6 className="text-white fw-bold text-uppercase"><a href="mailto:research@tantrija.com">🔬 &nbsp; research@tantrija.com</a></h6>
+              </div>
+              <div className="col-lg-4 p-0">
+                {/* <img src={researchImage} className="img-fluid" alt="Research & Development" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

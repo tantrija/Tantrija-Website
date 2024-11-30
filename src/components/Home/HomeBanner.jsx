@@ -40,7 +40,7 @@ export default function homebanner() {
           and steer your business towards a brighter tomorrow.
         </h6>
         <button onClick={() => (navigate('/contact'))} className="btn btn-warning px-4 py-2 fw-bold my-3" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="2300" data-aos-once="true">
-          Start a Project
+          Start Building
         </button>
       </div>
     </div>

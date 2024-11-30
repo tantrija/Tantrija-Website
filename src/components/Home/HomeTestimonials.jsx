@@ -7,37 +7,45 @@ import QuoteImg from "../../assets/quote.png"
 
 const testimonialsData = [
     {
+        "userImg": "ShwetankImg",
+        "quoteImg": QuoteImg,
+        "userName": "Bluemingo, Director",
+        "company": "Bluemingo Tech Pvt. Ltd",
+        "title": "Wordpress Website Deveopment",
+        "desc": "Our new website is incredible! They completely understood our manufacturing business and created something that looks professional and works perfectly. Our online presence has never been stronger. We've worked with other web teams before, but these folks just get it right. They turn your vision into reality."
+    },
+    {
         "userImg": "AliImg",
         "quoteImg": QuoteImg,
-        "userName": "Ali",
+        "userName": "Ali, Founder",
         "company": "CACTUS",
         "title": "Logo Designing",
-        "desc": "Exceptional logo design service. Perfectly captured our brand essence. Delivered a sleek, memorable logo that truly stands out. Highly recommended!"
+        "desc": "They really got what our brand is about. The design feels modern and memorable - it's exactly what we wanted. We've tried working with other designers before, but this team just gets it. If you need a logo that truly speaks your brand's language, they're the ones to call."
     },
     {
         "userImg": "SamuelMillerImg",
         "quoteImg": QuoteImg,
-        "userName": "Sam Miller",
+        "userName": "Sam Miller, Founder",
         "company": "The Fineart Ledger",
         "title": "Blockchain Integration",
-        "desc": "Outstanding NFT marketplace development. Deep blockchain expertise evident. User-friendly platform with innovative features. Boosted our trading immensely."
-    },
-    {
-        "userImg": "DanielZanggerImg",
-        "quoteImg": QuoteImg,
-        "userName": "Daniel Zangger",
-        "company": "Vocal Workout of The Day",
-        "title": "Mobile Application",
-        "desc": "Impressive mobile app creation. Intuitive design meets flawless functionality. Significantly increased user engagement and retention. A game-changer!"
+        "desc": "Their blockchain work is a game-changer for us. They built an NFT marketplace that's smooth, secure, and packed with cool features. Our entire trading platform feels transformed. I've worked with lots of tech teams, and these folks are definitely something special. They don't just build solutions - they create experiences."
     },
     {
         "userImg": "EdwinHoImg",
         "quoteImg": QuoteImg,
-        "userName": "Edwin Ho",
+        "userName": "Edwin Ho, CFO",
         "company": "Hedger Pay",
         "title": "Backend Deveopment",
-        "desc": "Excellent backend development and support. Robust, scalable solutions. Quick response to issues. Significantly improved our system's performance and reliability."
-    }
+        "desc": "These developers are absolute pros. They built us a backend system that's rock-solid and super scalable. Their support is lightning-fast, and our platform's performance has improved dramatically. After shopping around, I can confidently say they're in a league of their own. They turn technical challenges into elegant solutions."
+    },
+    {
+        "userImg": "DanielZanggerImg",
+        "quoteImg": QuoteImg,
+        "userName": "Daniel Zangger, CEO",
+        "company": "Vocal Workout of The Day",
+        "title": "Mobile Application",
+        "desc": "Our mobile app is a dream come true! It looks amazing and works even better. User engagement has gone through the roof since they took over. We've tried other developers, but none come close to their blend of design and functionality. They truly understand what makes an app click."
+    },
 ]
 
 export default function testimonials() {
@@ -92,14 +100,14 @@ export default function testimonials() {
                                         {/* <img src={card.userImg} className="userthumb" alt="user" /> */}
                                         <div>
                                             <h6 className="text-dark text-uppercase fw-bold mb-0 mt-2">{card.userName}</h6>
-                                            {/* <p className="text-uppercase text-one-line">{card.company}</p> */}
+                                            <p className="text-uppercase text-one-line">{card.company}</p>
                                         </div>
                                     </div>
                                     <img src={card.quoteImg} width={50} alt="quote" />
                                 </div>
                                 <h6 className="fw-medium text-uppercase text-dark mt-3">{card.title}</h6>
-                                <p className="text-dark text-five-lines">{card.desc}</p>
-                                <a href="#" className="card-link"></a>
+                                <p className="text-dark">{card.desc}</p>
+                                {/* <a href="#" className="card-link"></a> */}
                             </div>
                         ))}
                     </Slider>

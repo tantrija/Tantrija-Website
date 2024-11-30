@@ -43,10 +43,10 @@ const router = createBrowserRouter([
   { path: "/web-development", element: <WebDevelopment /> },
   { path: "/mobile-development", element: <MobileDevelopment /> },
   // { path: "/Solutions", element: <Solutions /> },
-  // { path: "/Portfolio", element: <Portfolio /> },
-  // { path: "/PortfolioInner", element: <PortfolioInner /> },
-  // { path: "/CaseStudies", element: <CaseStudies /> },
-  // { path: "/CaseStudiesInner", element: <CaseStudiesInner /> },
+  { path: "/portfolio", element: <Portfolio /> },
+  { path: "/portfolioinner", element: <PortfolioInner /> },
+  { path: "/casestudies", element: <CaseStudies /> },
+  { path: "/casestudiesinner", element: <CaseStudiesInner /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/terms-and-conditions", element: <TermsAndConditions /> },
@@ -71,9 +71,9 @@ const config = {
   floatingIcon: <img src={logoIcon} style={{ width: 50, height: 50, borderRadius: 50 }} />,
   // headerComponent: <div style={{paddingInline: 20, paddingBlock: 10, backgroundColor: "#ffc200", justifyContent:"space-between", alignItems:"center", display: "flex"}}><span style={{fontSize: 20, color:"black"}}><img src={logoIcon} style={{width: 35, height: 35, marginRight: 10, borderRadius: 35 }}/>Tantrija Enterprises</span><RiCloseLine color="black" size={20} onClick/></div>,
   opened: window.innerWidth > 768 ? true : false,
-  handleEnd: async(e) => {
+  handleEnd: async (e) => {
     console.log("e ---- ", e)
-    const {values} = e;
+    const { values } = e;
 
     const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeXqZpfKyVZH2w5qchGRDMs8BFnLXin15lvxI-KLDxXLgE-IQ"; // Replace with your Google Form URL
     const formEntries = {
@@ -103,7 +103,7 @@ export default function App() {
   return (
     <>
       <div className="App">
-        <AnimatedCursor
+        {window.innerWidth > 768 && <AnimatedCursor
           innerSize={0}
           outerSize={15}
           color='255, 255, 255'
@@ -135,7 +135,7 @@ export default function App() {
               }
             }
           ]}
-        />
+        />}
       </div>
       <RouterProvider router={router} />
       <ThemeProvider theme={theme}>

@@ -28,7 +28,7 @@ export default function home() {
       <Services />
       <Collaboration />
       <DevProcess />
-      {/* <CaseStudies /> */}
+      <CaseStudies />
       <HomeIndustries />
       <Testimonials />
       <ProjectForm />

@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
                                             <img src={card.img} width={50} alt="hire icon" />
                                             <h6 className="fw-bold text-uppercase text-dark mt-3">{card.title}</h6>
                                             <p className="text-dark text-four-lines">{card.desc}</p>
-                                            <a href="#" className="card-link"></a>
+                                            {/* <a href="#" className="card-link"></a> */}
                                         </div>
                                     </div>
                                 ))}

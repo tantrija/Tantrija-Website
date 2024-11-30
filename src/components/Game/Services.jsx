@@ -52,30 +52,30 @@ const BlockchainServiceData = [
 
 export default function aboutServices() {
     return (
-            <div className="bg-circle-right collab mt-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
-                            <p className="text-uppercase text-white">Our Services</p>
-                            <hr className="border-white mt-1 mx-auto hr-x-small" />
-                            <h4 className="text-warning text-uppercase">Our Game Development Services</h4>
-                            </div>
-                             <div className="col-lg-12 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-                                <div className="row mt-3 card-icon">
-                                {BlockchainServiceData.map((card, index) => (
+        <div className="bg-circle-right collab mt-5">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                        <p className="text-uppercase text-white">Our Services</p>
+                        <hr className="border-white mt-1 mx-auto hr-x-small" />
+                        <h4 className="text-warning text-uppercase">Our Game Development Services</h4>
+                    </div>
+                    <div className="col-lg-12 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+                        <div className="row mt-3 card-icon">
+                            {BlockchainServiceData.map((card, index) => (
                                 <div className="col-lg-3" key={index}>
                                     <div className="card bg-warning p-3 text-center mb-4" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000" data-aos-delay="50" data-aos-once="true">
                                         <img src={card.img} height={40} className="mb-2 mt-4" alt="hire icon" />
-                                            <h6 className="fw-bold text-uppercase text-dark mt-3">{card.title}</h6>
-                                            <p className="text-dark text-four-lines">{card.desc}</p>
-                                        <a href="#" className="card-link"></a>
+                                        <h6 className="fw-bold text-uppercase text-dark mt-3">{card.title}</h6>
+                                        <p className="text-dark text-four-lines">{card.desc}</p>
+                                        {/* <a href="#" className="card-link"></a> */}
                                     </div>
                                 </div>
-                                ))}
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     )
 }

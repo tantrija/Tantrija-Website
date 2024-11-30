@@ -11,7 +11,7 @@ export default function Footer() {
                             <img src={Logo} alt="Tantrija logo" width="210" height="70" />
                         </Link>
                         <p className="text-muted my-3">
-                            Tantrija is a leading software development company focused on delivering innovative solutions tailored to our clients' needs. Our team of skilled professionals specializes in mobile and web development, database management, content management systems, infrastructure and DevOps, blockchain, and game development.
+                            We Specialize in Transforming Businesses from Web2 to Web3 through Innovative Blockchain-Driven Solutions. Whether It’s DeFi, NFTs, Cryptocurrencies, or Decentralized Applications(DApps), We harness the power of Blockchain to enable Digital Transformation. Our expertise includes Mobile and Web Development, Database Management, System Architecture, Cloud Infrastructure, DevOps, and Game Development. With a focus on Client-Centricity and Cutting-Edge Technology, We deliver tailored solutions that drive Growth, Efficiency, and Success in the rapidly evolving Digital Landscape.
                         </p>
                         <div className="d-flex align-items-center gap-3 mb-4">
                             <a href="https://www.linkedin.com/company/tantrija/" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Tantrija LinkedIn">
@@ -34,8 +34,8 @@ export default function Footer() {
                             <ul className="list-unstyled">
                                 <li className="mb-3"><a href="/blockchain" className="footer-link text-uppercase">Blockchain</a></li>
                                 <li className="mb-3"><a href="/game-development" className="footer-link text-uppercase">Game Development</a></li>
-                                <li className="mb-3"><a href="/mobile-development" className="footer-link text-uppercase">Web App Development</a></li>
-                                <li className="mb-3"><a href="/web-development" className="footer-link text-uppercase">Mobile Application Development</a></li>
+                                <li className="mb-3"><a href="/web-development" className="footer-link text-uppercase">Web App Development</a></li>
+                                <li className="mb-3"><a href="/mobile-development" className="footer-link text-uppercase">Mobile Application Development</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,10 +49,10 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-3 mb-3">
                         <h6 className="text-warning text-uppercase mb-3">Contact Info</h6>
-                        <p className="text-muted mb-2 mt-0">Email: <a href="mailto:admin@tantrija.com">admin@tantrija.com</a></p>
+                        <p className="text-muted mb-2 mt-0">Email: <a href="mailto:admin@tantrija.com">contact@tantrija.com</a></p>
                         <p className="text-muted mb-2 mt-0">Contact Number: <a href="tel:+919784527279">+91 9784527279</a></p>
                         <p className="text-muted mb-2 mt-0">Whatsapp Number: <a target="_blank" rel="noopener noreferrer" href="https://wa.me/7420969224">+91 7420969224</a></p>
-                        <p className="text-muted">E-1804, R9 - Life Republic, Pune,<br />Maharastra, India</p>
+                        <p className="text-muted">Pune, Maharastra, <br />India</p>
                     </div>
                     <div className="col-lg-12 my-4">
                         <hr />
