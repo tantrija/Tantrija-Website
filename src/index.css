@@ -25,3 +25,143 @@
     background-color: #f9f9f9;
   }
 }
+
+/* Base styles */
+ul {
+  list-style: none;
+}
+
+/* Our Vision CSS */
+.title-head {
+  padding: 80px 0;
+}
+.title-head h2 {
+  font-size: 44px;
+  color: var(--vt-white);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.title-head.text-center p {
+  max-width: 800px;
+  margin: auto;
+}
+.title-head p {
+  color: var(--vt-white);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.innovation-list {
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.innovation-list li {
+  position: relative;
+  width: 33%; /* Default: 3 columns */
+  text-align: center;
+}
+
+.innovation-content {
+  padding: 25px 90px;
+  height: 100%;
+}
+
+.innovation-list li b {
+  color: var(--vt-warning);
+  font-size: 55px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.innovation-list li span {
+  color: var(--vt-white);
+  font-size: 20px;
+}
+
+.innovation-list li:after {
+  background: var(--vt-white); 
+  background: linear-gradient(to bottom, #0c1421 0, #FFC107 49%, #0f1626 100%);
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  margin: auto;
+  top: 0;
+}
+
+.innovation-list:after {
+  background: #fff; 
+  background: linear-gradient(to right, #0c1421 0, #FFC107 49%, #0f1626 100%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  margin: auto;
+}
+
+.innovation-list li:last-child:after {
+  background: 0 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .innovation-list li {
+    width: 50%; /* Retain 2 columns for tablets */
+  }
+
+  .innovation-content {
+    padding: 20px 60px; /* Adjust padding proportionally */
+  }
+
+  .innovation-list li b {
+    font-size: 45px; /* Slightly reduce font size */
+  }
+
+  .innovation-list li span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-head {
+    padding: 60px 0;
+  }
+
+  .title-head h2 {
+    line-height: 1.2em;
+  }
+
+  .innovation-list li {
+    width: 100%; /* Switch to 1 column for smaller screens */
+    margin-bottom: 30px;
+  }
+
+  .innovation-content {
+    padding: 15px 40px;
+  }
+
+  .innovation-list li b {
+    font-size: 35px; /* Maintain proportions */
+  }
+
+  .innovation-list li span {
+    font-size: 16px;
+  }
+
+  .innovation-list li:after {
+    display: none; /* Hide vertical separators for clarity */
+  }
+
+  .innovation-list:after {
+    display: none; /* Hide horizontal separators for clarity */
+  }
+}

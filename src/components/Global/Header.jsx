@@ -131,12 +131,12 @@ export default function header() {
                   <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/about" && " active border-bottom border-warning")}>
                     <Link to={"/about"}>About Us</Link>
                   </li>
-                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/portfolio" && " active border-bottom border-warning")}>
+                  {/* <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/portfolio" && " active border-bottom border-warning")}>
                     <Link to={"/portfolio"}>Portfolio</Link>
                   </li>
                   <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
                     <Link to={"/casestudies"}>Case Studies</Link>
-                  </li>
+                  </li> */}
                   <li onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                     className={active ? 'nav-link py-4 active' : 'nav-link py-4'}>

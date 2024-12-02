@@ -13,6 +13,7 @@ import Footer from "../components/Global/Footer";
 import HomeIndustries from "../components/Home/HomeIndustries";
 import * as ReactGA from "react-ga";
 import { useEffect } from "react";
+import OurVision from "../components/Home/HomeOurVision";
 
 export default function home() {
 
@@ -25,13 +26,14 @@ export default function home() {
       <Header />
       <Banner />
       <HireDeveloper />
+      <OurVision />
+      <Testimonials />
       <AboutSection />
       <Services />
       <Collaboration />
       <DevProcess />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <HomeIndustries />
-      <Testimonials />
       {/* <FAQs /> */}
       <ProjectForm />
       <Footer />
