@@ -34,7 +34,6 @@ export default function home() {
       <DevProcess />
       {/* <CaseStudies /> */}
       <HomeIndustries />
-      {/* <FAQs /> */}
       <ProjectForm />
       <Footer />
     </>
