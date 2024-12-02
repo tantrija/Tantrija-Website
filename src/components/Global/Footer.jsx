@@ -26,6 +26,11 @@ export default function Footer() {
                                     </g>
                                 </svg>
                             </a>
+                            <a href="https://tantrija.medium.com" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Tantrija Medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.694" height="18.706" viewBox="0 0 20.694 18.706">
+                                    <path d="M2.426 4.973c0-.384-.125-.768-.375-1.058L0 2.093V1.66h5.774l4.46 9.796 3.926-9.796H19.59v.433l-1.703 1.635c-.147.112-.221.294-.191.476v11.96c-.03.182.044.364.191.476l1.66 1.635v.433h-8.352v-.433l1.722-1.673c.169-.169.169-.218.169-.476V6.047l-4.785 12.16h-.645L3.234 6.047v8.125c-.047.34.067.682.298.927l2.24 2.72v.433H0v-.433l2.24-2.72c.23-.245.334-.587.186-.927V4.973z" fill="#FFC200" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div className="col-lg-3 mb-3 ps-lg-5">

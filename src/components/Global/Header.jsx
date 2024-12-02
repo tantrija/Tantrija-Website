@@ -8,10 +8,10 @@ import { FaAngleDown } from "react-icons/fa6";
 import MegaMenuBlockchain from "../MegaMenu/MegaMenuBlockchain"
 
 
-
 const MobileNav = ({ toggleNavbar }) => {
 
   const [showNavbar, setShowNavbar] = useState(false);
+  
   useEffect(() => {
     setShowNavbar(true);
 
@@ -40,6 +40,9 @@ const MobileNav = ({ toggleNavbar }) => {
               </li>
               <li className="nav-link text-center mb-4">
                 <Link onClick={toggleNavbar} className="text-dark" to={"/mobile-development"}>Mobile App Development</Link>
+              </li>
+              <li className="nav-link text-center mb-4">
+                <Link onClick={toggleNavbar} className="text-dark" to={"/faq"}>FAQ</Link>
               </li>
             </ul>
           </nav>
@@ -139,6 +142,9 @@ export default function header() {
                     className={active ? 'nav-link py-4 active' : 'nav-link py-4'}>
                     <Link to="#">IT Services <FaAngleDown /></Link>
                     <MegaMenuBlockchain />
+                  </li>
+                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
+                    <Link to={"/faq"}>FAQs</Link>
                   </li>
                 </ul>
               </nav>

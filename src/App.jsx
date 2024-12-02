@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import FAQ from "./Pages/FAQ";
 import Blockchain from "./Pages/Blockchain";
 import GameDevelopment from "./Pages/GameDevelopment";
 import WebDevelopment from "./Pages/WebDevelopment";
@@ -38,6 +39,7 @@ AOS.init({
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
+  { path: "/faq", element: <FAQ /> },
   { path: "/blockchain", element: <Blockchain /> },
   { path: "/game-development", element: <GameDevelopment /> },
   { path: "/web-development", element: <WebDevelopment /> },
@@ -138,7 +140,7 @@ export default function App() {
         />}
       </div>
       <RouterProvider router={router} />
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}>
         <ChatBot
           // This appears as the header
           // text for the chat bot
@@ -147,7 +149,7 @@ export default function App() {
           steps={steps}
           {...config}
         />
-      </ThemeProvider>
+      </ThemeProvider> */}
     </>
   );
 }
