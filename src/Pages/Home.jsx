@@ -8,7 +8,6 @@ import DevProcess from "../components/Home/HomeDevProcess";
 import CaseStudies from "../components/Home/HomeCaseStudies";
 import Testimonials from "../components/Home/HomeTestimonials";
 import ProjectForm from "../components/Home/HomeProjectForm";
-import FAQs from "../components/Home/HomeFAQs";
 import Footer from "../components/Global/Footer";
 import HomeIndustries from "../components/Home/HomeIndustries";
 import * as ReactGA from "react-ga";
