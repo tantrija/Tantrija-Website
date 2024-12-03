@@ -11,9 +11,9 @@ export default function Footer() {
                             <img src={Logo} alt="Tantrija logo" width="210" height="70" />
                         </Link>
                         <p className="text-muted my-3">
-                            We Specialize in Transforming Businesses from Web2 to Web3 through Innovative Blockchain-Driven Solutions. Whether It’s DeFi, NFTs, Cryptocurrencies, or Decentralized Applications(DApps), We harness the power of Blockchain to enable Digital Transformation. Our expertise includes Mobile and Web Development, Database Management, System Architecture, Cloud Infrastructure, DevOps, and Game Development. With a focus on Client-Centricity and Cutting-Edge Technology, We deliver tailored solutions that drive Growth, Efficiency, and Success in the rapidly evolving Digital Landscape.
+                        We transform businesses from Web2 to Web3 with blockchain-driven solutions in DeFi, NFTs, cryptocurrencies, and DApps. Our expertise includes mobile/web development, cloud infrastructure, DevOps, and game development. We deliver client-focused, innovative solutions for growth and success in the digital era.
                         </p>
-                        <div className="d-flex align-items-center gap-3 mb-4">
+                        <div className="d-flex align-items-center gap-3 my-5">
                             <a href="https://www.linkedin.com/company/tantrija/" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Tantrija LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20.432" height="19.525" viewBox="0 0 20.432 19.525">
                                     <path id="b5783c601e16032733df8073caacab72" d="M0,7.268A2.124,2.124,0,0,1,.69,5.641,2.532,2.532,0,0,1,2.485,5a2.457,2.457,0,0,1,1.755.631,2.225,2.225,0,0,1,.69,1.7A2.077,2.077,0,0,1,4.26,8.905a2.537,2.537,0,0,1-1.814.651h-.02A2.414,2.414,0,0,1,.671,8.905,2.186,2.186,0,0,1,0,7.268ZM.256,24.525V11.351H4.635V24.525Zm6.8,0h4.378V17.169a2.568,2.568,0,0,1,1-2.2,2.143,2.143,0,0,1,1.41-.463q2.209,0,2.209,2.978v7.041h4.378V16.972a6.348,6.348,0,0,0-1.381-4.428A4.709,4.709,0,0,0,15.4,11.035a4.476,4.476,0,0,0-3.964,2.189v.039h-.02l.02-.039V11.351H7.061q.039.631.039,3.925T7.061,24.525Z" transform="translate(0 -5)" fill="#FFC200" />
