@@ -16,16 +16,16 @@ const OurVision = () => {
                                 </div>
                                 <ul class="innovation-list">
                                     <li>
-                                        <div class="innovation-content"><b>5+</b><span>Years of Experience</span></div>
+                                        <div class="innovation-content"><b>8+</b><span>Years of Experience</span></div>
                                         <div class="innovation-content"><b>20+</b><span>Clients Worldwide</span></div>
                                     </li>
                                     <li>
-                                        <div class="innovation-content"><b>10+</b><span>Dedicated Professionals</span></div>
-                                        <div class="innovation-content"><b>98%</b><span>Happy Customers</span></div>
+                                        <div class="innovation-content"><b>15+</b><span>Dedicated Professionals</span></div>
+                                        <div class="innovation-content"><b>100%</b><span>Happy Customers</span></div>
                                     </li>
                                     <li>
                                         <div class="innovation-content"><b>5+</b><span>Countries Served</span></div>
-                                        <div class="innovation-content"><b>50+</b><span>Successful projects</span></div>
+                                        <div class="innovation-content"><b>30+</b><span>Successful projects</span></div>
                                     </li>
                                 </ul>
                             </div>
