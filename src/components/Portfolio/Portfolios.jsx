@@ -260,7 +260,7 @@ export default function portfolios() {
                                                     {card.techImg5 && <img src={card.techImg5} height={28} alt="tech icon" />}
                                                 </div>
                                                 <div className="d-flex align-items-center gap-4 mt-4 flex-wrap">
-                                                    <a href={card.preview} target="_blank" className="btn btn-outline-light px-4 py-2 fw-bold">Live Preview</a>
+                                                    <a href={card.preview} target="_blank" className="btn btn-outline-light px-4 py-2 fw-bold">Android</a>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 p-4 text-center">
