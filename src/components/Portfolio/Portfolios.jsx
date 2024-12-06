@@ -141,7 +141,7 @@ const games = [
 
 export default function portfolios() {
     return (
-        <div className="container">
+        <div className="container mb-5">
             <div className="row mt-5">
                 <div className="col-lg-12" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <h1 className="text-white text-center text-uppercase">Portfolio</h1>
