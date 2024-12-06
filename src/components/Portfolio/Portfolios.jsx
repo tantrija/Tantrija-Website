@@ -43,7 +43,7 @@ const blockchain = [
         techImg4: fox,
         techImg5: react,
         "projectImg": hedgePay,
-        "preview": "https://www.hedgepay.org"
+        "preview": "hedgepay.org"
     },
     {
         "title": "The Fine Art Ledger",
