@@ -47,7 +47,7 @@ const MobileNav = ({ toggleNavbar }) => {
               <li className="nav-link text-center mb-4">
                 <Link onClick={toggleNavbar} className="text-dark" to={"/faq"}>FAQ</Link>
               </li>
-            </ul>
+            </ul>  
           </nav>
           <Link to={"/contact"} className="btn btn-outline-dark px-4 py-2 fw-bold">Get In Touch</Link>
           <div className="social d-flex align-items-center gap-4 justify-content-center py-4">
