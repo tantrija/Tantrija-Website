@@ -140,7 +140,7 @@ export default function App() {
         />}
       </div>
       <RouterProvider router={router} />
-      {/* <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <ChatBot
           // This appears as the header
           // text for the chat bot
@@ -149,7 +149,7 @@ export default function App() {
           steps={steps}
           {...config}
         />
-      </ThemeProvider> */}
+      </ThemeProvider>
     </>
   );
 }

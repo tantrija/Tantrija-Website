@@ -2320,6 +2320,14 @@ textarea.form-control {
   line-height: 1.2em;
   margin-bottom: 10px;
 }
+
+.co-operator-tabs-2 .react-tabs__tab{
+  text-transform: uppercase;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
 .mega-menu .react-tabs__tab{
   text-transform: uppercase;
   padding: 18px 20px;
@@ -2444,6 +2452,15 @@ ul.react-tabs__tab-list{
   opacity: 1;
   visibility: visible;
   top: calc(57px + 30px)
+}
+.co-operator-tabs-2 .react-tabs__tab--selected:focus:after, .co-operator-tabs-2 .react-tabs__tab--selected:after {
+  content: "";
+  background-color: #ffc200;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 13px;
+  bottom: 0;
 }
 .co-operator-tabs .react-tabs__tab--selected:focus:after, .co-operator-tabs .react-tabs__tab--selected:after {
   content: "";
