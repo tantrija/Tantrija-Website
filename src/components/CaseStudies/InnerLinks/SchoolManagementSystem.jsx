@@ -4,7 +4,7 @@ import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
 
 // Placeholder for actual images
-import heroGraphic from "../../../assets/casestudies/SchoolImage2.png";
+import heroGraphic from "../../../assets/caseStudies/SchoolImage2.png";
 import checkCircleIcon from "../../../assets/check-circle-icon.svg";
 import SchoolImage1 from '../../../assets/caseStudies/SchoolImage1.png';
 import SchoolImage3 from '../../../assets/caseStudies/SchoolImage3.png';
