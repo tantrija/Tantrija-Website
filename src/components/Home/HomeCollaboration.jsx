@@ -46,7 +46,7 @@ import Gitlab from "./../../assets/gitlab-yellow.svg"
 
 export default function collaboration() {
     return (
-        <div className="bg-circle-left collab vh-50">
+        <div className="bg-circle-left collab py-5 my-5">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">

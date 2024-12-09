@@ -54,7 +54,7 @@ const industriesData = [
 
 export default function HomeIndustries() {
     return (
-        <div className="bg-circle-right vh-80">
+        <div className="bg-circle-right py-5 my-5">
             <div className="container mt-5 pt-4 text-center">
                 <p className="text-uppercase text-white">Scope of work</p>
                 <hr className="border-white mt-1 mx-auto hr-x-small" />

@@ -47,7 +47,7 @@ export default function ProjectForm() {
     };
 
     return (
-        <div className="bg-circle-right vh-70">
+        <div className="bg-circle-right py-5 my-5">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-9 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
@@ -103,7 +103,7 @@ export default function ProjectForm() {
                                                 required
                                             />
                                             <label className="form-check-label" htmlFor="exampleCheck1">
-                                                I have read and accepted the <a href="#" className="border-bottom">Terms & Conditions</a> and <a href="#" className="border-bottom">Privacy Policy</a>.
+                                                I have read and accepted the <a href="/terms-and-conditions" className="border-bottom">Terms & Conditions</a> and <a href="/privacy-policy" className="border-bottom">Privacy Policy</a>.
                                             </label>
                                         </div>
                                         <button className="btn btn-warning px-4 py-2 fw-bold my-3" type="submit">

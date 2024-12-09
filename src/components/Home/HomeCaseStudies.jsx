@@ -9,6 +9,7 @@ export default function casestudies(){
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
     return(
             <div className="bg-circle-left mt-5 pt-5">
                 <div className="container">
@@ -16,7 +17,7 @@ export default function casestudies(){
                         <div className="col-lg-12 text-center" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
                             <p className="text-uppercase text-white">Experience Our Success</p>
                             <hr className="border-white mt-1 mx-auto hr-x-small" />
-                            <h4 className="text-warning text-uppercase">our Case Studies</h4>
+                            <h4 className="text-warning text-uppercase mb-4">our Case Studies</h4>
                         </div>
                         <div className="col-lg-12">
                             <div className="row mt-3">
