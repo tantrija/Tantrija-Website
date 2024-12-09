@@ -35,7 +35,7 @@ const managementSystems = [
             "Create and manage events with event details",
             "Track attendee confirmations and feedback",
             "Event calendar with automated reminders",
-            "Seamless integration with Google Calendar and other platforms"
+            "Seamless integration with Google Calendar and other platforms" 
         ]
     },
     {
