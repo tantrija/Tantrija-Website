@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom"
 import Footer from './../components/Global/Footer'
-import * as ReactGA from "react-ga";
 import { useEffect } from "react";
 
 export default function PrivacyPolicy() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        window.scrollTo(0, 0);
     }, [])
 
     return (

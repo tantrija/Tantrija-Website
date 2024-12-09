@@ -8,12 +8,11 @@ import AboutBelieve from "../components/About/AboutBelieve";
 import AboutLead from "../components/About/AboutLead";
 import Footer from "../components/Global/Footer";
 import { useEffect } from "react";
-import * as ReactGA from "react-ga";
 
 export default function about() {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
   }, [])
 
   return (

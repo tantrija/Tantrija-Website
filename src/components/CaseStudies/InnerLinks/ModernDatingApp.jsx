@@ -11,6 +11,7 @@ import photoShop from "../../../assets/unity-photoshop.png";
 import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const clientsData = [
     {
@@ -74,6 +75,10 @@ const resultsData = [
 ];
 
 export default function ModernDatingApp() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <Header />

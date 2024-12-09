@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
 import { Link } from 'react-router-dom';
@@ -13,6 +13,10 @@ import reactJS from "../../../assets/unity-react-js.png";
 import blockchainIcon from "../../../assets/ethereum.png";
 
 export default function MLMPlatform() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const [activeFeature, setActiveFeature] = useState(0);
 
     const techIcons = [

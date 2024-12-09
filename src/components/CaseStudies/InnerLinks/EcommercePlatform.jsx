@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
@@ -39,6 +39,10 @@ const futureEnhancements = [
 ];
 
 export default function EcommercePlatformCaseStudy() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <Header />

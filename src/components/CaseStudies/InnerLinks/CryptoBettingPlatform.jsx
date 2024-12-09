@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bettingPlatform from "../../../assets/caseStudies/BettingImage1.png";
 import clientReq from "../../../assets/caseStudies/BettingImage2.png";
 import checkCircleIcon from "../../../assets/check-circle-icon.svg";
@@ -36,6 +36,10 @@ const futureEnhancements = [
 ];
 
 export default function BettingPlatformCaseStudy() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <Header />

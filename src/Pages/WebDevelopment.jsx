@@ -10,13 +10,12 @@ import Industries from "../components/Development/Industries";
 import Demo from "../components/Development/Demo";
 import WhyChooseUs from "../components/Development/WhyChooseUs";
 import Footer from "../components/Global/Footer";
-import * as ReactGA from "react-ga";
 import { useEffect } from "react";
 
 export default function WebDevelopment() {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
   }, [])
 
   return (

@@ -10,13 +10,12 @@ import Industries from "../components/Game/Industries";
 import Demo from "../components/Game/Demo";
 import WhyChooseUs from "../components/Game/WhyChooseUs";
 import Footer from "../components/Global/Footer";
-import * as ReactGA from "react-ga";
 import { useEffect } from "react";
 
 export default function GameDevelopment() {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
   }, [])
 
   return (

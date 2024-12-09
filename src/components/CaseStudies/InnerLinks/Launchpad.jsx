@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
@@ -57,6 +57,10 @@ const platformMetrics = [
 ];
 
 export default function AdvancedLaunchpad() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const [activeTab, setActiveTab] = useState('features');
 
     return (

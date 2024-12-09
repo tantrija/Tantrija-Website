@@ -22,7 +22,6 @@ import "aos/dist/aos.css";
 import useFavicon from "./useFavicon";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsAndConditions from "./Pages/TermsAndConditions";
-import ReactGA from "react-ga";
 
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
@@ -35,9 +34,6 @@ import MLMPlatform from "./components/CaseStudies/InnerLinks/MlmWebsite";
 import EcommercePlatform from "./components/CaseStudies/InnerLinks/EcommercePlatform";
 import Launchpad from "./components/CaseStudies/InnerLinks/Launchpad";
 import SchoolManagementSystem from "./components/CaseStudies/InnerLinks/SchoolManagementSystem";
-
-const TRACKING_ID = "G-1PQGPQJ23N";
-ReactGA.initialize(TRACKING_ID);
 
 AOS.init({
   offset: 0,

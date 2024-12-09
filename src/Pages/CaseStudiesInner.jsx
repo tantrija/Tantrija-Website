@@ -9,12 +9,10 @@ import CaseStudiesInnerConclusion from "../components/CaseStudies/CaseStudiesInn
 import ProjectForm from "../components/Home/HomeProjectForm";
 import Footer from "../components/Global/Footer";
 import { useEffect } from "react";
-import * as ReactGA from "react-ga";
 
 export default function caseStudiesInner() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [])
 
   return (

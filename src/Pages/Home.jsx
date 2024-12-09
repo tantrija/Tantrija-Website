@@ -10,7 +10,6 @@ import Testimonials from "../components/Home/HomeTestimonials";
 import ProjectForm from "../components/Home/HomeProjectForm";
 import Footer from "../components/Global/Footer";
 import HomeIndustries from "../components/Home/HomeIndustries";
-import * as ReactGA from "react-ga";
 import { useEffect } from "react";
 import OurVision from "../components/Home/HomeOurVision";
 
@@ -18,7 +17,6 @@ export default function home() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [])
 
   return (
@@ -32,7 +30,7 @@ export default function home() {
       <Services />
       <Collaboration />
       <DevProcess />
-      {/* <CaseStudies /> */}
+      <CaseStudies />
       <HomeIndustries />
       <ProjectForm />
       <Footer />

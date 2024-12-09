@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../../Global/Header";
 import Footer from "../../Global/Footer";
 
@@ -88,6 +88,10 @@ const competitiveComparison = [
 ];
 
 export default function GoalChainPlatform() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const [activeFeature, setActiveFeature] = useState(0);
 
     return (

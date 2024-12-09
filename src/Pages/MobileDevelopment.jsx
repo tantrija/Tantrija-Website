@@ -10,13 +10,12 @@ import Industries from "../components/Mobile/Industries";
 import Demo from "../components/Mobile/Demo";
 import WhyChooseUs from "../components/Mobile/WhyChooseUs";
 import Footer from "../components/Global/Footer";
-import * as ReactGA from "react-ga";
 import { useEffect } from "react";
 
 export default function MobileDevelopment() {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
   }, [])
 
   return (
