@@ -45,6 +45,9 @@ const MobileNav = ({ toggleNavbar }) => {
                 <Link onClick={toggleNavbar} className="text-dark" to={"/portfolio"}>Portfolio</Link>
               </li>
               <li className="nav-link text-center mb-4">
+                <Link onClick={toggleNavbar} className="text-dark" to={"/casestudies"}>Case Studies</Link>
+              </li>
+              <li className="nav-link text-center mb-4">
                 <Link onClick={toggleNavbar} className="text-dark" to={"/faq"}>FAQ</Link>
               </li>
             </ul>  
@@ -137,16 +140,16 @@ export default function header() {
                   <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/portfolio" && " active border-bottom border-warning")}>
                     <Link to={"/portfolio"}>Portfolio</Link>
                   </li>
-                  {/* <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
+                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
                     <Link to={"/casestudies"}>Case Studies</Link>
-                  </li> */}
+                  </li>
                   <li onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                     className={active ? 'nav-link py-4 active' : 'nav-link py-4'}>
                     <Link to="#">IT Services <FaAngleDown /></Link>
                     <MegaMenuBlockchain />
                   </li>
-                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/casestudies" && " active border-bottom border-warning")}>
+                  <li className={"nav-link py-4" + (pathname?.toLowerCase() == "/faq" && " active border-bottom border-warning")}>
                     <Link to={"/faq"}>FAQs</Link>
                   </li>
                 </ul>

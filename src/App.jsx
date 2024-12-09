@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 import Home from "./Pages/Home";
@@ -28,6 +28,13 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import { steps } from "./chatbot/chatbot-steps";
 import { RiCloseLine } from "react-icons/ri";
+import CryptoBettingPlatform from './components/CaseStudies/InnerLinks/CryptoBettingPlatform';
+import ModernDatingApp from "./components/CaseStudies/InnerLinks/ModernDatingApp";
+import CryptoFootballFantasyGame from "./components/CaseStudies/InnerLinks/CryptoFootballFantasyGame";
+import MLMPlatform from "./components/CaseStudies/InnerLinks/MlmWebsite";
+import EcommercePlatform from "./components/CaseStudies/InnerLinks/EcommercePlatform";
+import Launchpad from "./components/CaseStudies/InnerLinks/Launchpad";
+import SchoolManagementSystem from "./components/CaseStudies/InnerLinks/SchoolManagementSystem";
 
 const TRACKING_ID = "G-1PQGPQJ23N";
 ReactGA.initialize(TRACKING_ID);
@@ -47,7 +54,45 @@ const router = createBrowserRouter([
   // { path: "/Solutions", element: <Solutions /> },
   { path: "/portfolio", element: <Portfolio /> },
   { path: "/portfolioinner", element: <PortfolioInner /> },
-  { path: "/casestudies", element: <CaseStudies /> },
+  // { path: "/casestudies", element: <CaseStudies /> },
+  {
+    path: '/casestudies',
+    element: <Outlet />,
+    children: [
+      {
+        index: true,
+        element: <CaseStudies />
+      },
+      {
+        path: '/casestudies/crypto-betting-platform',
+        element: <CryptoBettingPlatform />
+      },
+      {
+        path: '/casestudies/dating-app',
+        element: <ModernDatingApp />
+      },
+      {
+        path: '/casestudies/crypto-football-fantasy-game',
+        element: <CryptoFootballFantasyGame />
+      },
+      {
+        path: '/casestudies/mlm-website',
+        element: <MLMPlatform />
+      },
+      {
+        path: '/casestudies/ecommerce-platform',
+        element: <EcommercePlatform />
+      },
+      {
+        path: '/casestudies/launchpad',
+        element: <Launchpad />
+      },
+      {
+        path: '/casestudies/school-management-system',
+        element: <SchoolManagementSystem />
+      }
+    ]
+  },
   { path: "/casestudiesinner", element: <CaseStudiesInner /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy-policy", element: <PrivacyPolicy /> },

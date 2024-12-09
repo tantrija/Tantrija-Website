@@ -2394,7 +2394,7 @@ textarea.form-control {
   transform: translateY(-50%);
 }
 .bankingBanner{
-  max-width:300px;
+  max-width: 600px;
 }
 img.solutions{
   max-width: 900px;
@@ -2593,10 +2593,53 @@ body[data-aos-delay='5000'] [data-aos].aos-animate {
   }
 }
 
-.opacity-6 {
-  color: #ffffff80 !important;
+.theme-table {
+  --vt-table-color: #fff;
+  --vt-table-bg: rgba(255,255,255,0.05);
+  --vt-table-border-color: #4d5154;
+  --vt-table-striped-bg: #2c3034;
+  --vt-table-striped-color: #fff;
+  --vt-table-active-bg: #373b3e;
+  --vt-table-active-color: #fff;
+  --vt-table-hover-bg: #323539;
+  --vt-table-hover-color: #fff;
+  color: var(--vt-table-color);
+  border-color: var(--vt-table-border-color);
 }
 
-.opacity-4 {
-  color: #ffffff40 !important;
+.btn-theme {
+  --vt-btn-color: #ffc200;
+  --vt-btn-bg: #000;
+  --vt-btn-border-color: #000;
+}
+
+.btn-theme:hover,
+.btn-theme:focus {
+  --vt-btn-color: #000;
+  --vt-btn-border-color: #000;
+  --vt-btn-bg: #ffc200;
+}
+
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.bg-gradient-animated {
+  animation: gradientShift 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
 }
